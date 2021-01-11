@@ -1,13 +1,14 @@
 package hello.hellospring.repository;
 
 import hello.hellospring.domain.Member;
+import org.springframework.stereotype.Repository;
 
 import java.util.*;
 
 
 /* 동시성 문제를 실무에서는 ConcurrentHashMap과 AtomicLong 사용을 고려한다. */
 public class MemoryMemberRepository implements MemberRepository{
-
+//구현체
     private static Map<Long, Member> store = new HashMap<>();
     private static long sequence = 0L;
     // sequence는 key값, 0부터 차례로 증가한다.

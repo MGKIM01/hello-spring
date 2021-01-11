@@ -4,7 +4,22 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="24596b5f-aa61-4bbe-a578-2cd83e1b1427" name="Default Changelist" comment="" />
+    <list default="true" id="24596b5f-aa61-4bbe-a578-2cd83e1b1427" name="Default Changelist" comment="create MemberController">
+      <change afterPath="$PROJECT_DIR$/src/main/java/hello/hellospring/controller/HomeController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/hello/hellospring/controller/MemberController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/hello/hellospring/controller/MemberForm.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/hello/hellospring/service/SpringConfig.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/templates/home.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/templates/memberList.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/templates/members/createMemberForm.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/classes/hello/hellospring/repository/MemoryMemberRepository.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/classes/hello/hellospring/repository/MemoryMemberRepository.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/classes/hello/hellospring/service/MemberService.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/classes/hello/hellospring/service/MemberService.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/test/classes/hello/hellospring/service/MemberServiceTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/test/classes/hello/hellospring/service/MemberServiceTest.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/hello/hellospring/repository/MemoryMemberRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/hello/hellospring/repository/MemoryMemberRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/hello/hellospring/service/MemberService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/hello/hellospring/service/MemberService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/hello/hellospring/service/MemberServiceTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/hello/hellospring/service/MemberServiceTest.java" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -75,12 +90,14 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="Class" />
         <option value="JUnit5 Test Class" />
+        <option value="Class" />
+        <option value="HTML File" />
       </list>
     </option>
   </component>
   <component name="Git.Settings">
+    <option name="PATH_TO_GIT" value="C:\Program Files\Git\bin\git.exe" />
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="GithubDefaultAccount">
@@ -93,12 +110,13 @@
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">
+    <property name="DefaultHtmlFileTemplate" value="HTML File" />
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary" value="JUnit5" />
     <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit5" value="" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
-    <property name="settings.editor.selected.configurable" value="project.propVCSSupport.Mappings" />
+    <property name="settings.editor.selected.configurable" value="vcs.Git" />
   </component>
   <component name="RecentsManager">
     <key name="CreateTestDialog.Recents.Supers">
@@ -108,7 +126,30 @@
       <recent name="hello.hellospring.service" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.MemberServiceTest.중복_회원_예외">
+  <component name="RunManager" selected="Application.HelloSpringApplication">
+    <configuration name="HelloSpringApplication" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="hello.hellospring.HelloSpringApplication" />
+      <module name="hello-spring.main" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="hello.hellospring.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration type="JUnit" factoryName="JUnit">
+      <module name="hello-spring.test" />
+      <option name="PACKAGE_NAME" value="hello.hellospring" />
+      <option name="MAIN_CLASS_NAME" value="hello.hellospring.HelloSpringApplicationTests" />
+      <option name="METHOD_NAME" value="contextLoads" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="MemberServiceTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="hello-spring.test" />
       <extension name="coverage">
@@ -135,22 +176,6 @@
       <option name="PACKAGE_NAME" value="hello.hellospring.service" />
       <option name="MAIN_CLASS_NAME" value="hello.hellospring.service.MemberServiceTest" />
       <option name="METHOD_NAME" value="회원가입" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="MemberServiceTest.중복_회원_예외" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="hello-spring.test" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="hello.hellospring.service.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="hello.hellospring.service" />
-      <option name="MAIN_CLASS_NAME" value="hello.hellospring.service.MemberServiceTest" />
-      <option name="METHOD_NAME" value="중복_회원_예외" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -187,9 +212,17 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <list>
+      <item itemvalue="JUnit.MemberServiceTest" />
+      <item itemvalue="JUnit.MemberServiceTest.회원가입" />
+      <item itemvalue="JUnit.MemoryMemberRepositoryTest" />
+      <item itemvalue="JUnit.MemoryMemberRepositoryTest.save" />
+      <item itemvalue="JUnit." />
+      <item itemvalue="Application.HelloSpringApplication" />
+    </list>
     <recent_temporary>
       <list>
-        <item itemvalue="JUnit.MemberServiceTest.중복_회원_예외" />
+        <item itemvalue="Application.HelloSpringApplication" />
         <item itemvalue="JUnit.MemberServiceTest.회원가입" />
         <item itemvalue="JUnit.MemberServiceTest" />
         <item itemvalue="JUnit.MemoryMemberRepositoryTest" />
@@ -209,6 +242,14 @@
       <option name="presentableId" value="Default" />
       <updated>1609326109641</updated>
     </task>
+    <task id="LOCAL-00001" summary="hello.html&#10;hello-template.html">
+      <created>1610262151027</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1610262151027</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -221,6 +262,13 @@
         </entry>
       </map>
     </option>
+    <option name="oldMeFiltersMigrated" value="true" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="first commit" />
+    <MESSAGE value="hello.html&#10;hello-template.html" />
+    <MESSAGE value="create MemberController" />
+    <option name="LAST_COMMIT_MESSAGE" value="create MemberController" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />
